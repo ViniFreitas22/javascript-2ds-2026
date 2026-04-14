@@ -8,7 +8,8 @@
     <body>
 
         <input type="text" id="teste">
-        <button onclick="enviar()">Enviar</button>   
+        <button onclick="enviar()">Enviar</button>  
+        <div id="resultado"></div> 
 
     </body>
 
@@ -27,9 +28,13 @@
         document.write("<h4>"+estudando+"</h4>");
 
         let teste = document.getElementById("teste");
+        let areaTexto = document.getElementById("resultado");
 
         function enviar(){
-            document.write(teste)
+            let mensagem = teste.value;
+            //pegamos o .value para ver o texto
+            alert("Você digitou: "+ mensagem);
+            areaTexto.innerHTML = "<h3>Você digitou: " +mensagem+ "</h3>" 
         }
     </script>
 
