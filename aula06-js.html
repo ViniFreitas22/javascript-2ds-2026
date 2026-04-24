@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula06 - Atividade</title>
+    <style>
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+        }
+
+        .item{
+            background-color:#34a06f;
+            height: 300px;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="grid">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </div>
+</body>
+</html>
